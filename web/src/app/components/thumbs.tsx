@@ -2,6 +2,7 @@
 
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import { Media } from './media'
+import { extraSmallText } from './classes'
 
 type Props = {
   work?: any
@@ -53,7 +54,7 @@ export const Thumbs = ({ work, isMediaGallery = false, index }: Props) => {
         title={title}
       />
       {!isMediaGallery && (
-        <h3 className="text-sm text-left mt-1">{title}</h3>
+        <h3 className={`${extraSmallText} text-left mt-1`}>{title}</h3>
       )}
     </div>
   )

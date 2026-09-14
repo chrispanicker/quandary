@@ -1,7 +1,7 @@
 'use client'
 
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
-import { cGrid } from './classes'
+import { cGrid, extraSmallText } from './classes'
 import { Media } from './media'
 
 type Props = {
@@ -53,7 +53,7 @@ export const HeroGallery = ({ array = [], isMediaGallery = false }: Props) => {
 
   return (
     <div className={`${cGrid} md:pt-8 pt-4`}>
-      <h3 className="text-sm md:text-right col-span-6 md:col-span-1">Preview</h3>
+      <h3 className={`${extraSmallText} md:text-right col-span-6 md:col-span-1`}>Preview</h3>
       <div className="relative w-full h-full col-span-6 md:col-span-5 group bg-black">
         {/* <h3 className="text-5xl text-black absolute bottom-4 left-4 z-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
           {title}
