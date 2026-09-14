@@ -1,0 +1,1 @@
+export const cGrid = "grid grid-cols-[1fr_1fr_1fr_1fr_1fr_1fr] gap-2";
