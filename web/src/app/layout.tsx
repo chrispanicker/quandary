@@ -17,7 +17,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </header>
         {children}
         <footer className={`${cGrid} ${extraSmallText} pt-16`}>
-          <h3 className={`col-start-1 text-right`}>Contact</h3>
+          <h3 className={`col-start-1 md:text-right`}>Contact</h3>
           <h1 className={`col-start-2 ${smallText}`}>chris@panicker.design<br></br>@chrispanicker</h1>
           {/* <h3 className={`${mediumText}`}>©2026 Chris Panicker</h3> */}
         </footer>
