@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { cGrid, mediumText, extraSmallText, smallText } from "./components/classes";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: "Chris Panicker",
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <h1 className={`col-start-2 ${smallText}`}>chris@panicker.design<br></br>@chrispanicker</h1>
           {/* <h3 className={`${mediumText}`}>©2026 Chris Panicker</h3> */}
         </footer>
+        <Analytics />
       </body>
     </html>
   );
